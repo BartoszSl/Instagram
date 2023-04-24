@@ -1,0 +1,46 @@
+/* Border */
+
+section {
+	/* Long */
+	border-width: 10px;
+	border-style: double;
+	border-color: royalblue;
+}
+
+section {
+	/* short */
+	border: 10px double royalblue;
+}
+
+/* Font */
+
+section {
+	/* Long */
+	font-style: oblique;
+	font-weight: 300;
+	font-size: 4.2em;
+	line-height: 1.5;
+	font-family: Tahoma, sans-serif;
+}
+
+section {
+	/* short */
+	font: oblique 300 4.2em/1.5 Tahoma, sans-serif;
+}
+
+/* Padding */
+
+section {
+    /* Long */
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+section {
+    /* Short */
+    padding: 5px 10px 5px 10px; /* top -> right -> bottom -> left */
+    padding: 5px 10px; /* top&bottom -> left&right*/
+    padding: 20px 5px 30px; /* top -> left&right -> right */
+}
