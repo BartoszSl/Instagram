@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+			body {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				height: 100vh;
+				background-color: #333;
+				font-family: 'Montserrat', sans-serif;
+			}
+
+			a {
+				margin-bottom: 50px;
+			}
+
+			a {
+				position: relative;
+				padding: 10px 20px;
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: 48px;
+				color: rgb(0, 140, 255);
+				text-decoration: none;
+			}
+
+			a,
+			a::after,
+			a::before {
+				transition: 0.3s;
+			}
+
+			a::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 3px;
+				width: 100%;
+				background-color: #fff;
+				transform: scaleX(0);
+				transform-origin: right;
+				transition: transform 0.3s;
+			}
+
+			a:hover::after {
+				transform: scaleX(1);
+				transform-origin: left;
+			}
+
+			button {
+				position: relative;
+				margin: 20px;
+				padding: 30px 50px;
+				background: none;
+				border: 1px solid white;
+				border-radius: 8px;
+				color: #fff;
+				font-size: 28px;
+				text-transform: uppercase;
+				cursor: pointer;
+				overflow: hidden;
+			}
+
+			button::before,
+			button::after {
+				content: '';
+				display: block;
+				position: absolute;
+				transition: 0.5s;
+				z-index: -1;
+			}
+
+			button {
+				border: none;
+				transition: 0.5s;
+			}
+
+			button:hover {
+				box-shadow: 2px 3px 0 0 rgba(255, 255, 255, 0.8),
+					inset 11px 6px 10px rgba(0, 0, 0, 0.2);
+			}
+		</style>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Poppins:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<a href="">Link</a>
+		<button>Button</button>
+	</body>
+</html>
