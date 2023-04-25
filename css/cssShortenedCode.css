@@ -31,33 +31,62 @@ section {
 /* Padding */
 
 section {
-    /* Long */
-    padding-top: 5px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    padding-left: 10px;
+	/* Long */
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
 }
 
 section {
-    /* Short */
-    padding: 5px 10px 5px 10px; /* top -> right -> bottom -> left */
-    padding: 5px 10px; /* top&bottom -> left&right*/
-    padding: 20px 5px 30px; /* top -> left&right -> right */
+	/* Short */
+	padding: 5px 10px 5px 10px; /* top -> right -> bottom -> left */
+	padding: 5px 10px; /* top&bottom -> left&right*/
+	padding: 20px 5px 30px; /* top -> left&right -> right */
 }
 
 /* Margin */
 
 section {
-    /* Long */
-    margin-top: 5px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    margin-left: 10px;
+	/* Long */
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;
 }
 
 section {
-    /* Short */
-    margin: 5px 10px 5px 10px; /* top -> right -> bottom -> left */
-    margin: 5px 10px; /* top&bottom -> left&right*/
-    margin: 20px 5px 30px; /* top -> left&right -> right */
+	/* Short */
+	margin: 5px 10px 5px 10px; /* top -> right -> bottom -> left */
+	margin: 5px 10px; /* top&bottom -> left&right*/
+	margin: 20px 5px 30px; /* top -> left&right -> right */
+}
+
+/* BackGround */
+
+section {
+	/* Long */
+	background-color: #ccc;
+	background-image: url(simple.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+section {
+	/* Short */
+	background: #ccc url(simple.png) no-repeat right top;
+}
+
+/* List */
+
+section {
+	/* Long */
+	list-style-type: circle;
+	list-style-position: inherit;
+	list-style-image: url(simple.png);
+}
+
+section {
+	/* Short */
+	list-style: circle inherit url(simple.png);
 }
