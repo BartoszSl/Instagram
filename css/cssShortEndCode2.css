@@ -1,0 +1,45 @@
+.style1 {
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    border: 5px dotted black;
+}
+
+.style2 {
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    border: 5px dotted black;
+}
+
+.style {
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    border: 5px dotted black;
+}
+
+body {
+    background-color: tomato;
+}
+
+section {
+    background-color: tomato;
+}
+
+:root {
+    --fineColor: royalblue;
+    --contentSize: 30px;
+}
+
+body {
+    background-color: var(--fineColor);
+    font-size: var(--contentSize);
+}
+
+section {
+    background-color: var(--fineColor);
+}
+
+
+
